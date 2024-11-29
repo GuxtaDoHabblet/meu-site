@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: cyan;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Brilho suave */
+}
+
+input {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 12px; /* Ajuste da borda arredondada */
+    border: 1px solid #ccc;
+    transition: transform 0.6s ease; /* Transição suave */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px; /* Ajuste da borda arredondada */
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    background-color: #444;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.5); /* Brilho ciano suave */
+    background-color: #00cccc; /* Ciano */
+    border-color: #00cccc; /* Cor de borda ciano */
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave de 0,5 segundos */
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave de 0,5 segundos */
+}
+
+.message {
+    position: absolute; /* Mensagens na mesma posição */
+    width: 100%; /* Ajuste para ocupar toda a largura disponível */
+}
+
+.correct {
+    color: #32cd32; /* Verde claro */
+    text-shadow: 0 0 10px rgba(50, 205, 50, 0.7); /* Brilho suave */
+}
+
+.error {
+    color: #ff4c4c; /* Vermelho claro */
+    text-shadow: 0 0 10px rgba(255, 76, 76, 0.7); /* Brilho suave */
+}
+
+.loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: opacity 0.5s ease-in-out; /* Transição suave de 0,5 segundos */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+.toggle-password {
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.show-password-btn {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    border: 2px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 12px; /* Ajuste da borda arredondada */
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show-password-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.5); /* Brilho ciano suave */
+    background-color: #00cccc; /* Ciano */
+    border-color: #00cccc; /* Cor de borda ciano */
+}
+
+#generateBtn {
+    background-color: #444;
+    color: white;
+    border: 2px solid #ccc;
+    padding: 12px 24px;
+    border-radius: 12px; /* Ajuste da borda arredondada */
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#generateBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.5); /* Brilho ciano suave */
+    background-color: #00cccc; /* Ciano */
+    border-color: #00cccc; /* Cor de borda ciano */
+}
+
+#showPassword {
+    display: none;
+}
+
+.messages {
+    margin-top: 10px;
+    position: relative; /* Para posicionar as mensagens */
+    height: 20px; /* Altura suficiente para exibir uma mensagem */
+}
+
+.messages p {
+    margin: 5px 0;
+}

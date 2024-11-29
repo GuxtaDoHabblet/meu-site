@@ -1,0 +1,18 @@
+<h1>Se você é quem diz ser, responda:</h1>
+<p>"Né não tia"</p>
+
+<label for="inputWord">Digite a palavra secreta:</label>
+<input type="password" id="inputWord" placeholder="Digitar..." />
+
+<div class="messages" aria-live="polite">
+    <p id="errorMessage" class="hidden message error">Resposta errada mano. (OBS: tudo minúsculo)</p>
+    <p id="result" class="hidden message standard">Digite a palavra secreta</p>
+    <p id="loadingMessage" class="hidden message loading">Carregando...</p>
+</div>
+
+<div class="toggle-password">
+    <button class="show-password-btn" id="showPasswordBtn" onclick="togglePasswordVisibility()">Mostrar Senha</button>
+</div>
+
+<br>
+<button onclick="checkWord()" id="generateBtn">Gerar</button>
